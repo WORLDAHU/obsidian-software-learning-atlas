@@ -35,6 +35,17 @@ Each example is a standalone vault under `examples/<name>_vault/`.
 
 - SolidWorks: `examples/solidworks_vault/`
 
+### SolidWorks Preview
+
+- Canvas: `examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
+- Demo video: `assets/solidworks-example.mp4`
+
+Preview images (screenshots are manual to capture; this repo focuses on the learning/organization method):
+
+[![Click to watch the demo video](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/软件界面.png)](assets/solidworks-example.mp4)
+![SolidWorks Sketch Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/草图.png)
+![SolidWorks Surface Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/曲面.png)
+
 ## How to open an example (important)
 
 In Obsidian, open the **example vault folder** as a vault (e.g. `examples/solidworks_vault/`).  
@@ -45,4 +56,3 @@ Do **not** open the repository root as a vault, otherwise canvas images/links ma
 - SolidWorks surface scaffolding + canvas links: `scripts/solidworks_surface_scaffold.ps1`
 - Organize canvas images into `99-Images`-style folder + rename: `scripts/obsidian_canvas_organize_images.ps1`
 - Export a minimal SolidWorks subset from a private vault into a public example vault: `scripts/export_solidworks_for_github.ps1`
-

@@ -35,6 +35,17 @@
 
 - SolidWorks：`examples/solidworks_vault/`
 
+### SolidWorks 示例预览
+
+- 白板文件：`examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
+- 示例视频：`assets/solidworks-example.mp4`
+
+预览截图（截图需要手动采集；本仓库提供的是一种组织与记忆的方法）：
+
+[![点击观看示例视频](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/软件界面.png)](assets/solidworks-example.mp4)
+![SolidWorks Sketch Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/草图.png)
+![SolidWorks Surface Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/曲面.png)
+
 ## 如何打开示例（重要）
 
 在 Obsidian 里把“示例 Vault 文件夹”当作一个独立 Vault 打开，例如：
@@ -55,4 +66,3 @@
 
 这个仓库会持续增加更多软件示例（例如其它 CAD/CAE、IDE、剪辑软件等）。  
 你也可以只下载你需要的那个示例 Vault，不必把所有示例都拉下来。
-
