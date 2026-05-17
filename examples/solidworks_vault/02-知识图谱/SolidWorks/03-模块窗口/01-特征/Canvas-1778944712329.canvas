@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"node-0","x":0,"y":0,"width":250,"height":100,"type":"file","file":"02-知识图谱/SolidWorks/03-模块窗口/01-特征/01-特征.md"},
+		{"id":"node-1","x":270,"y":0,"width":250,"height":100,"type":"file","file":"02-知识图谱/SolidWorks/03-模块窗口/01-特征/06-Instant3D.md"},
+		{"id":"node-2","x":540,"y":0,"width":250,"height":100,"type":"file","file":"02-知识图谱/SolidWorks/03-模块窗口/01-特征/04-参考几何体.md"},
+		{"id":"node-3","x":810,"y":0,"width":250,"height":100,"type":"file","file":"02-知识图谱/SolidWorks/03-模块窗口/01-特征/05-曲线.md"}
+	],
+	"edges":[]
+}
