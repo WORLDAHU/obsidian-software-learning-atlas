@@ -40,11 +40,9 @@
 - 白板文件：`examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
 - 示例视频：`assets/solidworks-example.mp4`
 
-预览截图（截图需要手动采集；本仓库提供的是一种组织与记忆的方法）：
+白板图谱预览（点击图片播放视频）：
 
-[![点击观看示例视频](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/软件界面.png)](assets/solidworks-example.mp4)
-![SolidWorks Sketch Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/草图.png)
-![SolidWorks Surface Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/曲面.png)
+[![点击观看示例视频](assets/solidworks-canvas-preview.png)](assets/solidworks-example.mp4)
 
 ## 如何打开示例（重要）
 

@@ -40,11 +40,9 @@ Each example is a standalone vault under `examples/<name>_vault/`.
 - Canvas: `examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
 - Demo video: `assets/solidworks-example.mp4`
 
-Preview images (screenshots are manual to capture; this repo focuses on the learning/organization method):
+Canvas graph preview (click to play the demo video):
 
-[![Click to watch the demo video](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/软件界面.png)](assets/solidworks-example.mp4)
-![SolidWorks Sketch Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/草图.png)
-![SolidWorks Surface Tab](examples/solidworks_vault/02-知识图谱/SolidWorks/99-图片/曲面.png)
+[![Click to watch the demo video](assets/solidworks-canvas-preview.png)](assets/solidworks-example.mp4)
 
 ## How to open an example (important)
 

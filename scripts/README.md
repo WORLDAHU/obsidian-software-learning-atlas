@@ -28,3 +28,11 @@
 - 预演：  
   `powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\claww\Documents\New project\scripts\obsidian_canvas_organize_images.ps1" -VaultRoot "C:\Users\claww\Documents\New project\examples\solidworks_vault" -CanvasRelativePath "02-知识图谱\SolidWorks\白板思维导图.canvas" -DryRun`
 - 写入：去掉 `-DryRun`
+
+## 4) 生成白板预览图（用于 GitHub README）
+
+脚本：`scripts/render_canvas_preview.ps1`
+
+示例（只渲染以“软件界面.png”为根的连通子图，避免远处孤立节点导致留白）：
+
+`powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\claww\Documents\New project\scripts\render_canvas_preview.ps1" -CanvasPath "C:\Users\claww\Documents\New project\examples\solidworks_vault\02-知识图谱\SolidWorks\白板思维导图.canvas" -OutPngPath "C:\Users\claww\Documents\New project\assets\solidworks-canvas-preview.png" -RootFile "02-知识图谱/SolidWorks/99-图片/软件界面.png"`
