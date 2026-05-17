@@ -27,7 +27,7 @@ This method is built for **top-down learning** (UI map first, details later) and
 - If there are many commands: **cluster first, then drill down**.
 - Screenshots are **manual** (automation helps scaffolding/links/organization, not capturing UI).
 
-See: `docs/方法论.md` (Chinese, for now).
+See: [docs/方法论.md](docs/方法论.md) (Chinese, for now).
 
 ## Example vaults (download only what you need)
 
@@ -35,13 +35,13 @@ Each example is a standalone vault under `examples/<name>_vault/`.
 
 | Example | Vault path | Entry | Preview |
 |---|---|---|---|
-| SolidWorks | `examples/solidworks_vault/` | `02-知识图谱/SolidWorks/白板思维导图.canvas` | `assets/solidworks-example.gif` |
+| SolidWorks | [examples/solidworks_vault/](examples/solidworks_vault/) | [白板思维导图.canvas](examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas) | [solidworks-example.gif](assets/solidworks-example.gif) |
 
 ### SolidWorks Preview
 
-- Canvas: `examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
-- Animated preview: `assets/solidworks-example.gif` (renders inline on most pages)
-- Raw video: `assets/solidworks-example.mp4` (higher quality, but often not embedded inline)
+- Canvas: [examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas](examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas)
+- Animated preview: [assets/solidworks-example.gif](assets/solidworks-example.gif) (renders inline on most pages)
+- Raw video: [assets/solidworks-example.mp4](assets/solidworks-example.mp4) (higher quality, but often not embedded inline)
 
 Canvas graph preview (click to play the demo video):
 
@@ -51,6 +51,17 @@ Animated demo (inline):
 
 ![SolidWorks Canvas Demo](assets/solidworks-example.gif)
 
+### Add a New Example (copy/paste template)
+
+1) Create a new example vault folder: `examples/<name>_vault/`  
+2) Put the canvas + minimal note structure inside (screenshots are manual)  
+3) Add preview assets (GIF + a canvas preview image) under `assets/`  
+4) Add a new row to the table above
+
+Row template:
+
+`| <Software> | examples/<name>_vault/ | <relative path to .canvas> | assets/<preview>.gif |`
+
 ## How to open an example (important)
 
 In Obsidian, open the **example vault folder** as a vault (e.g. `examples/solidworks_vault/`).  
@@ -58,10 +69,10 @@ Do **not** open the repository root as a vault, otherwise canvas images/links ma
 
 ## Scripts (optional)
 
-- SolidWorks surface scaffolding + canvas links: `scripts/solidworks_surface_scaffold.ps1`
-- Organize canvas images into `99-Images`-style folder + rename: `scripts/obsidian_canvas_organize_images.ps1`
-- Export a minimal SolidWorks subset from a private vault into a public example vault: `scripts/export_solidworks_for_github.ps1`
+- SolidWorks surface scaffolding + canvas links: [scripts/solidworks_surface_scaffold.ps1](scripts/solidworks_surface_scaffold.ps1)
+- Organize canvas images into `99-Images`-style folder + rename: [scripts/obsidian_canvas_organize_images.ps1](scripts/obsidian_canvas_organize_images.ps1)
+- Export a minimal SolidWorks subset from a private vault into a public example vault: [scripts/export_solidworks_for_github.ps1](scripts/export_solidworks_for_github.ps1)
 
 ## Skill (for Codex)
 
-- Skill file: `skills/obsidian-software-learning/SKILL.md`
+- Skill file: [skills/obsidian-software-learning/SKILL.md](skills/obsidian-software-learning/SKILL.md)

@@ -27,7 +27,7 @@
 - **命令多就先分区再下钻**：先做“聚类索引页”（例如“曲面生成/曲面编辑”），再拆成叶子命令页。
 - **截图需要手动完成**：先截图再放进 Vault；脚本主要帮你生成骨架、连线与整理图片。
 
-详细说明见：`docs/方法论.md`
+详细说明见：[docs/方法论.md](docs/方法论.md)
 
 ## 示例列表（按需下载）
 
@@ -35,13 +35,13 @@
 
 | 示例 | Vault 路径 | 入口文件 | 预览 |
 |---|---|---|---|
-| SolidWorks | `examples/solidworks_vault/` | `02-知识图谱/SolidWorks/白板思维导图.canvas` | `assets/solidworks-example.gif` |
+| SolidWorks | [examples/solidworks_vault/](examples/solidworks_vault/) | [白板思维导图.canvas](examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas) | [solidworks-example.gif](assets/solidworks-example.gif) |
 
 ### SolidWorks 示例预览
 
-- 白板文件：`examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
-- 动图预览：`assets/solidworks-example.gif`（网页可直接显示）
-- 原始视频：`assets/solidworks-example.mp4`（更清晰，但很多网页不内嵌播放）
+- 白板文件：[examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas](examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas)
+- 动图预览：[assets/solidworks-example.gif](assets/solidworks-example.gif)（网页可直接显示）
+- 原始视频：[assets/solidworks-example.mp4](assets/solidworks-example.mp4)（更清晰，但很多网页不内嵌播放）
 
 白板图谱预览（点击图片播放视频）：
 
@@ -56,20 +56,21 @@
 在 Obsidian 里把“示例 Vault 文件夹”当作一个独立 Vault 打开，例如：
 
 - 打开 `examples/solidworks_vault/`
+- 打开 [examples/solidworks_vault/](examples/solidworks_vault/)
 
 不要打开仓库根目录当 Vault（否则白板里的图片/链接会显示找不到）。
 
 ## 自动化脚本（可选）
 
-- 生成 SolidWorks 曲面模块骨架并挂白板：`scripts/solidworks_surface_scaffold.ps1`
-- 整理白板图片（移动到 `99-图片` + 单图项重命名）：`scripts/obsidian_canvas_organize_images.ps1`
-- 导出你的私有仓库中的 SolidWorks 子集，生成开源示例 Vault：`scripts/export_solidworks_for_github.ps1`
+- 生成 SolidWorks 曲面模块骨架并挂白板：[scripts/solidworks_surface_scaffold.ps1](scripts/solidworks_surface_scaffold.ps1)
+- 整理白板图片（移动到 `99-图片` + 单图项重命名）：[scripts/obsidian_canvas_organize_images.ps1](scripts/obsidian_canvas_organize_images.ps1)
+- 导出你的私有仓库中的 SolidWorks 子集，生成开源示例 Vault：[scripts/export_solidworks_for_github.ps1](scripts/export_solidworks_for_github.ps1)
 
-使用方法见：`scripts/README.md`
+使用方法见：[scripts/README.md](scripts/README.md)
 
 ## Skill（给 Codex 用）
 
-- Skill 文件：`skills/obsidian-software-learning/SKILL.md`
+- Skill 文件：[skills/obsidian-software-learning/SKILL.md](skills/obsidian-software-learning/SKILL.md)
 
 ## 计划：方法 + 多示例持续推进
 
