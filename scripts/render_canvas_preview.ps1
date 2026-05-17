@@ -131,6 +131,20 @@ function ToScreenRect($n) {
 $nodeById = @{}
 foreach ($n in $canvas.nodes) { $nodeById[$n.id] = $n }
 
+# 尝试把图片节点真实渲染出来（而不是只画框）
+$canvasDir = Split-Path -Parent $CanvasPath
+$vaultRoot = Split-Path -Parent (Split-Path -Parent $canvasDir)
+
+function Resolve-AssetPath([string]$rel) {
+  if ([string]::IsNullOrWhiteSpace($rel)) { return $null }
+  $p = $rel -replace '/', '\\'
+  $try1 = Join-Path $vaultRoot $p
+  if (Test-Path -LiteralPath $try1) { return $try1 }
+  $try2 = Join-Path $canvasDir $p
+  if (Test-Path -LiteralPath $try2) { return $try2 }
+  return $null
+}
+
 # 先画边
 foreach ($e in @($canvas.edges)) {
   if (!$nodeById.ContainsKey($e.fromNode) -or !$nodeById.ContainsKey($e.toNode)) { continue }
@@ -153,15 +167,36 @@ foreach ($n in $nodes) {
   $brush = $brushText
 
   if ($n.type -eq "file") {
-    $label = ShortLabel $n.file
-    if ($n.file -match '\.(png|jpg|jpeg|webp)$') { $brush = $brushImg }
-    elseif ($n.file -match '\.md$') { $brush = $brushMd }
+    if ($n.file -match '\.(png|jpg|jpeg|webp)$') {
+      # 图片节点本身就能表达信息，不额外叠字，避免遮挡画面
+      $label = ""
+      $brush = $brushImg
+    } else {
+      $label = ShortLabel $n.file
+      if ($n.file -match '\.md$') { $brush = $brushMd }
+    }
   } elseif ($n.type -eq "text") {
     $label = "Text"
   }
 
-  $g.FillRectangle($brush, $r)
-  $g.DrawRectangle($penBox, $r.X, $r.Y, $r.Width, $r.Height)
+  if ($n.type -eq "file" -and $n.file -match '\.(png|jpg|jpeg|webp)$') {
+    $imgPath = Resolve-AssetPath $n.file
+    if ($imgPath) {
+      $img = [System.Drawing.Image]::FromFile($imgPath)
+      try {
+        $g.DrawImage($img, $r)
+      } finally {
+        $img.Dispose()
+      }
+      $g.DrawRectangle($penBox, $r.X, $r.Y, $r.Width, $r.Height)
+    } else {
+      $g.FillRectangle($brush, $r)
+      $g.DrawRectangle($penBox, $r.X, $r.Y, $r.Width, $r.Height)
+    }
+  } else {
+    $g.FillRectangle($brush, $r)
+    $g.DrawRectangle($penBox, $r.X, $r.Y, $r.Width, $r.Height)
+  }
 
   if (![string]::IsNullOrWhiteSpace($label)) {
     $layout = [System.Drawing.RectangleF]::new($r.X + 10, $r.Y + 10, $r.Width - 20, $r.Height - 20)
@@ -177,4 +212,7 @@ $g.Dispose()
 $bmp.Dispose()
 
 "DONE: $OutPngPath"
+
+
+
 

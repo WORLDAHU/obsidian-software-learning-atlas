@@ -36,3 +36,11 @@
 示例（只渲染以“软件界面.png”为根的连通子图，避免远处孤立节点导致留白）：
 
 `powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\claww\Documents\New project\scripts\render_canvas_preview.ps1" -CanvasPath "C:\Users\claww\Documents\New project\examples\solidworks_vault\02-知识图谱\SolidWorks\白板思维导图.canvas" -OutPngPath "C:\Users\claww\Documents\New project\assets\solidworks-canvas-preview.png" -RootFile "02-知识图谱/SolidWorks/99-图片/软件界面.png"`
+
+## 5) MP4 转 GIF（用于网页内预览）
+
+脚本：`scripts/mp4_to_gif.ps1`
+
+示例：
+
+`powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Users\claww\Documents\New project\scripts\mp4_to_gif.ps1" -InMp4 "C:\Users\claww\Documents\New project\assets\solidworks-example.mp4" -OutGif "C:\Users\claww\Documents\New project\assets\solidworks-example.gif"`

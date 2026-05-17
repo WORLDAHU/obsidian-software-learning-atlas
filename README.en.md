@@ -38,11 +38,16 @@ Each example is a standalone vault under `examples/<name>_vault/`.
 ### SolidWorks Preview
 
 - Canvas: `examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
-- Demo video: `assets/solidworks-example.mp4`
+- Animated preview: `assets/solidworks-example.gif` (renders inline on most pages)
+- Raw video: `assets/solidworks-example.mp4` (higher quality, but often not embedded inline)
 
 Canvas graph preview (click to play the demo video):
 
 [![Click to watch the demo video](assets/solidworks-canvas-preview.png)](assets/solidworks-example.mp4)
+
+Animated demo (inline):
+
+![SolidWorks Canvas Demo](assets/solidworks-example.gif)
 
 ## How to open an example (important)
 

@@ -38,11 +38,16 @@
 ### SolidWorks 示例预览
 
 - 白板文件：`examples/solidworks_vault/02-知识图谱/SolidWorks/白板思维导图.canvas`
-- 示例视频：`assets/solidworks-example.mp4`
+- 动图预览：`assets/solidworks-example.gif`（网页可直接显示）
+- 原始视频：`assets/solidworks-example.mp4`（更清晰，但很多网页不内嵌播放）
 
 白板图谱预览（点击图片播放视频）：
 
 [![点击观看示例视频](assets/solidworks-canvas-preview.png)](assets/solidworks-example.mp4)
+
+动图（网页内可直接看）：
+
+![SolidWorks Canvas Demo](assets/solidworks-example.gif)
 
 ## 如何打开示例（重要）
 
