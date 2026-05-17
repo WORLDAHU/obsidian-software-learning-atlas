@@ -33,7 +33,9 @@ See: `docs/方法论.md` (Chinese, for now).
 
 Each example is a standalone vault under `examples/<name>_vault/`.
 
-- SolidWorks: `examples/solidworks_vault/`
+| Example | Vault path | Entry | Preview |
+|---|---|---|---|
+| SolidWorks | `examples/solidworks_vault/` | `02-知识图谱/SolidWorks/白板思维导图.canvas` | `assets/solidworks-example.gif` |
 
 ### SolidWorks Preview
 
@@ -59,3 +61,7 @@ Do **not** open the repository root as a vault, otherwise canvas images/links ma
 - SolidWorks surface scaffolding + canvas links: `scripts/solidworks_surface_scaffold.ps1`
 - Organize canvas images into `99-Images`-style folder + rename: `scripts/obsidian_canvas_organize_images.ps1`
 - Export a minimal SolidWorks subset from a private vault into a public example vault: `scripts/export_solidworks_for_github.ps1`
+
+## Skill (for Codex)
+
+- Skill file: `skills/obsidian-software-learning/SKILL.md`

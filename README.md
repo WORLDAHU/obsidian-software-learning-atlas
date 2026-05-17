@@ -33,7 +33,9 @@
 
 每个示例都是一个独立 Obsidian Vault，位于 `examples/<name>_vault/`。
 
-- SolidWorks：`examples/solidworks_vault/`
+| 示例 | Vault 路径 | 入口文件 | 预览 |
+|---|---|---|---|
+| SolidWorks | `examples/solidworks_vault/` | `02-知识图谱/SolidWorks/白板思维导图.canvas` | `assets/solidworks-example.gif` |
 
 ### SolidWorks 示例预览
 
@@ -64,6 +66,10 @@
 - 导出你的私有仓库中的 SolidWorks 子集，生成开源示例 Vault：`scripts/export_solidworks_for_github.ps1`
 
 使用方法见：`scripts/README.md`
+
+## Skill（给 Codex 用）
+
+- Skill 文件：`skills/obsidian-software-learning/SKILL.md`
 
 ## 计划：方法 + 多示例持续推进
 
